@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "imagify",
+  "version": "1.0",
+
+  "description": "Opens up images links in full on reddit.com",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["open-reddit-images.js"]
+    }
+  ]
+
+}
